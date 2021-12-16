@@ -1,6 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
-
+const blah = process.env.REACT_APP_whee
 function App() {
     return (
         <div className="App">
@@ -17,6 +17,8 @@ function App() {
                 >
                     Learn React
                 </a>
+                <p>A const: {blah}</p>
+                <p>Using an env variable: {process.env.REACT_APP_NOT_SECRET_CODE} and one from a file: {process.env.REACT_APP_whee} and running {process.env.NODE_ENV} mode</p>
             </header>
         </div>
     );
